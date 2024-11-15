@@ -6,7 +6,7 @@ Dificultad: Muy fácil
 
 ## Despliegue
 
-Primero desplegamos la máquina con ```bash auto_deploy.sh firsthacking.tar``` (si no sabes en la página de DockerLabs ahí un pdf que lo explica).
+Primero desplegamos la máquina con ```sudo bash auto_deploy.sh firsthacking.tar```(si no sabes hacerlo puedes consultar este [pdf](https://dockerlabs.es/instrucciones_de_uso.pdf).
 
 
 ## Reconocimiento
