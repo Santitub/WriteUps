@@ -14,7 +14,7 @@ Primero desplegamos la máquina con ```bash auto_deploy.sh firsthacking.tar``` (
 Una vez desplegada comprobamos que tenemos conectividad con ```ping -c 1 172.17.0.2``` 
 <br>
 
-![image](https://github.com/TerrorAterrador/WriteUps/assets/146730674/af4d0189-b640-4576-aca6-3c02c75c9434)
+![image](images/firsthacking.PNG)
 <br>
 `-c 1` ⮞ solo lo repite una vez<br>
 <br>
