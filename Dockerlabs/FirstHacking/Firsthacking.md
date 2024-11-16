@@ -38,7 +38,6 @@ Al aplicar el escaneo, vemos que el puerto 21 está abierto
 
 ## FTP (Puerto 21)
 
-Una vez ya conozcamos la versión del ftp podemos buscar `ftp vsftpd 2.3.4 exploit github`. <br> para encontrar algún repositorio que nos ayude a explotar esa vulnerabilidad [github](https://github.com/Hellsender01/vsftpd_2.3.4_Exploit). Si seguimos las instrucciones del repositorio instalando los requirimientos con `sudo python3 -m pip install pwntools`. <br> Nos descargamos el repositorio con `git clone https://github.com/Hellsender01/vsftpd_2.3.4_Exploit.git`. Una vez esté descargado probamos ha hacer lo que nos dice que sería `python3 exploit.py 172.17.0.2`. Y listo ya seríamos root.
-<br>
+Una vez ya conozcamos la versión del ftp probamos a buscar `ftp vsftpd 2.3.4 exploit github`. en internet para encontrar algo que nos ayude a explotar esa vulnerabilidad. Al buscarlo encontramos este [repositorio](https://github.com/Hellsender01/vsftpd_2.3.4_Exploit). Ahora procedemos a clonarlo con `git clone https://github.com/Hellsender01/vsftpd_2.3.4_Exploit.git`. Una vez que lo descarguemos instalaremos las dependencias necesarias con `sudo python3 -m pip install pwntools` y cuando estén instaladas ejecutamos `python3 exploit.py 172.17.0.2`. Y con eso conseguiríamos ser el usuario **root**
 
 ![image](https://github.com/TerrorAterrador/WriteUps/assets/146730674/345f784d-7c90-4ac1-948a-b27703598104)
