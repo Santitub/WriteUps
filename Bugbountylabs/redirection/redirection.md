@@ -58,3 +58,10 @@ En este laboratorio podemos observar un botón que si lo presionamos nos redirig
 Si miramos el código fuente de la página nos encontramos con esta parte que maneja la redirección
 
 ![image](images/enlace1.PNG)
+
+
+Viendo esto, podemos probar a cambiar la url a la que nos redirige el botón a por ejemplo `dockerlabs.es`. Con lo cual nos quedaría así ![image](images/url1.PNG)
+
+Tendiendo esta url, al presionar ENTER podemos comprobar que si que funciona, redirigiéndonos a `dockerlabs.es`
+
+![image](images/dockerlabs.PNG)
