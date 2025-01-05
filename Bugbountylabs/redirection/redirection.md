@@ -91,3 +91,7 @@ Al hacer esto, podemos ver que funciona y nos redirige a `dockerlabs.es`
 
 
 ## Laboratorio 3
+
+En este laboratorio la estructura es la misma que los otros dos, un botón que nos redirige a google
+
+![image](images/laboratorio3.PNG)
