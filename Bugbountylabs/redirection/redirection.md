@@ -65,3 +65,11 @@ Viendo esto, podemos probar a cambiar la url a la que nos redirige el botón a p
 Tendiendo esta url, al presionar ENTER podemos comprobar que si que funciona, redirigiéndonos a `dockerlabs.es`
 
 ![image](images/dockerlabs.PNG)
+
+
+## Laboratorio 2
+
+En este laboratorio también podemos observar un botón que si lo presionamos nos redirige a google
+
+![image](images/laboratorio2.PNG)
+
