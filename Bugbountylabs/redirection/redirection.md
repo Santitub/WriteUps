@@ -75,4 +75,4 @@ En este laboratorio también podemos observar un botón que si lo presionamos no
 
 Si miramos el código fuente el código de redirección es el mismo, pero si probamos el mismo método vemos que no funcionará
 
-![image](images/error.PNG)
+![image](images/error1.PNG)
