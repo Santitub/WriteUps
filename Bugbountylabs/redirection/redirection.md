@@ -88,3 +88,6 @@ Al presionar ENTER, me sale esta confirmación (no siempre tiene porque salir). 
 Al hacer esto, podemos ver que funciona y nos redirige a `dockerlabs.es`
 
 ![image](images/dockerlabs.PNG)
+
+
+## Laboratorio 3
