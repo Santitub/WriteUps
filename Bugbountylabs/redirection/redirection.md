@@ -107,3 +107,8 @@ Para estos casos podemos utilizar oralyzer, una herramienta para detectar vulner
 Al ejecutar el comando vemos que detecta varias url con las que se puede explotar el open-redirect. Pero como todas redirigen a google pues no podemos saber si en realidad funciona, ya que el laboratorio da como válido todos los enlaces que redirijan a google. Así que probaremos esta url `http://172.17.0.2/laboratorio3/redirect.php?url=http%3A%2F%2Fwww.dev.google.com`.
 
 Al utilizar esa url podemos ver que nos redirige a `www.dev.google.com`, aunque este dominio no exista, podemos ver que la web es vulnerable a un open-redirect
+
+![image](images/final.PNG)
+
+
+## Y CON ESTO YA RESOLVERÍAMOS TODOS LOS LABORATORIOS, ESPERO QUE OS GUSTARA 😉
