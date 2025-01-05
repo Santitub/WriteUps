@@ -81,6 +81,6 @@ Para hacer open-redirection también podemos probar a usar un @, que se usa para
 
 ![image](images/url2.PNG)
 
-Al presionar ENTER, me sale esta confirmación (no siempre tiene porque salir)
+Al presionar ENTER, me sale esta confirmación (no siempre tiene porque salir). Y la damos a `yes`
 
 ![image](images/confirmación.PNG)
