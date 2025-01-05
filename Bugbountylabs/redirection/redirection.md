@@ -44,3 +44,17 @@ Al aplicar el escaneo, vemos que el puerto 80 está abierto
 Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web. Al buscar 172.17.0.2 nos encontramos con esto
 
 ![image](images/inicio.PNG)
+
+
+Aquí podemos observar tres laboratorios para practicar open-redirect, para el que no sepa lo que es un open-redirect, este es una vulnerabilidad en una web que permite redirigir a los usuarios a una página externa modificando la url.
+
+
+## Laboratorio 1
+
+En este laboratorio podemos observar un botón que si lo presionamos nos redirige a google
+
+![image](images/laboratorio1.PNG)
+
+Si miramos el código fuente de la página nos encontramos con esta parte que maneja la redirección
+
+![image](images/enlace1.PNG)
