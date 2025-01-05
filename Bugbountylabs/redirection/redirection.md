@@ -111,4 +111,4 @@ Al utilizar esa url podemos ver que nos redirige a `www.dev.google.com`, aunque 
 ![image](images/final.PNG)
 
 
-## Y CON ESTO YA RESOLVERÍAMOS TODOS LOS LABORATORIOS, ESPERO QUE OS GUSTARA 😉
+## Y CON ESTO YA RESOLVERÍAMOS TODOS LOS LABORATORIOS 😉
