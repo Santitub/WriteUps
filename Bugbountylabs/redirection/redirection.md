@@ -73,3 +73,6 @@ En este laboratorio también podemos observar un botón que si lo presionamos no
 
 ![image](images/laboratorio2.PNG)
 
+Si miramos el código fuente el código de redirección es el mismo, pero si probamos el mismo método vemos que no funcionará
+
+![image](images/error.PNG)
