@@ -73,6 +73,14 @@ En este laboratorio también podemos observar un botón que si lo presionamos no
 
 ![image](images/laboratorio2.PNG)
 
-Si miramos el código fuente el código de redirección es el mismo, pero si probamos el mismo método vemos que no funcionará
+Si miramos el código fuente el código de redirección es el mismo, pero si probamos el mismo método vemos que no funcionará. Así que habrá que probar otro método
 
 ![image](images/error1.PNG)
+
+Para hacer open-redirection también podemos probar a usar un @, que se usa para separar la url de la página principal y la atacante. Y la url final nos quedaría así
+
+![image](images/url2.PNG)
+
+Al presionar ENTER, me sale esta confirmación (no siempre tiene porque salir)
+
+![image](images/confirmación.PNG)
