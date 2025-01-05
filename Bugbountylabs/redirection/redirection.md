@@ -10,7 +10,7 @@ Dificultad: Principiante
 
 Nos descargamos el archivo .zip que contiene el auto_deploy, lo descomprimimos y ejecutamos el .py como **sudo**
 
-![image](images/firsthacking.PNG)
+![image](images/despliegue.PNG)
 
 
 ## Reconocimiento
