@@ -95,3 +95,7 @@ Al hacer esto, podemos ver que funciona y nos redirige a `dockerlabs.es`
 En este laboratorio la estructura es la misma que los otros dos, un botón que nos redirige a google
 
 ![image](images/laboratorio3.PNG)
+
+Si probamos a cambiar la url o usamos el @ nos dará este error
+
+![image](images/error1.PNG)
