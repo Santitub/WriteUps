@@ -33,7 +33,7 @@ Una vez que tengamos conectividad con la máquina usamos nmap ```nmap -p- --open
 `-Pn` ⮞ ignora si esta activa o no la IP<br> 
 <br>
 
-Al aplicar el escaneo, vemos que el puerto 21 está abierto
+Al aplicar el escaneo, vemos que el puerto 80 está abierto
 <br>
 
 ![image](images/nmap.PNG)
@@ -43,4 +43,4 @@ Al aplicar el escaneo, vemos que el puerto 21 está abierto
 
 Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web. Al buscar 172.17.0.2 nos encontramos con esto
 
-![image](images/root.PNG)
+![image](images/inicio.PNG)
