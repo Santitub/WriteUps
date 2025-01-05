@@ -1,12 +1,16 @@
-Máquina: [FirstHacking](https://dockerlabs.es/)
+Máquina: [Redirection](https://bugbountylabs.com/)
 
-Autor: El Pingüino de Mario
+Autor: El Pinguino de Mario & Curiosidades De Hackers
 
-Dificultad: Muy fácil
+Dificultad: Principiante
+
+![image](images/Redirection.PNG)
 
 ## Despliegue
 
-Primero desplegamos la máquina con ```sudo bash auto_deploy.sh firsthacking.tar```(si no sabes hacerlo puedes consultar este [pdf](https://dockerlabs.es/instrucciones_de_uso.pdf)).
+Nos descargamos el archivo .zip que contiene el auto_deploy, lo descomprimimos y ejecutamos el .py como **sudo**
+
+![image](images/firsthacking.PNG)
 
 
 ## Reconocimiento
@@ -16,7 +20,6 @@ Cuando la tengamos desplegada podemos ver la conectividad con ```ping -c 1 172.1
 con el parámetro `-c` hacemos que el ping solo se haga una vez<br>
 <br>
 
-![image](images/firsthacking.PNG)
 
 Una vez que tengamos conectividad con la máquina usamos nmap ```nmap -p- --open -sS -sC -sV --min-rate 3000 -n -vvv -Pn 172.17.0.2``` <br>
 `-p-` ⮞ comprueba todos los puertos <br>
@@ -36,11 +39,8 @@ Al aplicar el escaneo, vemos que el puerto 21 está abierto
 ![image](images/nmap.PNG)
 <br>
 
-## FTP (Puerto 21)
+## Apache (Puerto 80)
 
-Una vez que obtengamos la versión del ftp probamos a buscar `ftp vsftpd 2.3.4 exploit github`. en internet para encontrar algo que nos ayude a explotar esa vulnerabilidad. Al buscarlo encontramos este [repositorio](https://github.com/Hellsender01/vsftpd_2.3.4_Exploit). 
-<br> Ahora procederemos a clonarlo con `git clone https://github.com/Hellsender01/vsftpd_2.3.4_Exploit.git`. <br>
-<br> Una vez que lo descarguemos instalaremos las dependencias necesarias con `sudo python3 -m pip install pwntools` y cuando estén instaladas ejecutamos `python3 exploit.py 172.17.0.2`. <br>
-Y con eso conseguiríamos ser el usuario **root**
+Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web. Al buscar 172.17.0.2 nos encontramos con esto
 
 ![image](images/root.PNG)
