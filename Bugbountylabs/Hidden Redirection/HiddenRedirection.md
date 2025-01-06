@@ -49,16 +49,12 @@ Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puert
 Aquí podemos observar muchos botones (en total hay 50) que si los pulsamos nos llevan todos a `https://elrincondelhacker.es`. También podemos ver un texto que nos dice que encontremos el enlace vulnerable
 
 
-Si miramos el código fuente de la página nos encontramos con esta parte que maneja la redirección
+Si miramos el código fuente de la página nos encontramos con esta parte en la que están todas las url
 
 ![image](images/codigo_fuente.png)
 
 
-Viendo esto, podemos probar a cambiar la url a la que nos redirige el botón a por ejemplo `dockerlabs.es`. Con lo cual nos quedaría así ![image](images/url1.PNG)
-
-Tendiendo esta url, al presionar ENTER podemos comprobar que si que funciona, redirigiéndonos a `dockerlabs.es`
-
-![image](images/dockerlabs.PNG)
+Viendo esto, podemos usar este script para enumerar todos los enlaces y guardarlos en un txt
 
 
 ## Laboratorio 2
