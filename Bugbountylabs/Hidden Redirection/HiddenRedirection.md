@@ -36,14 +36,14 @@ Una vez que tengamos conectividad con la máquina usamos nmap ```nmap -p- --open
 Al aplicar el escaneo, vemos que el puerto 8080 está abierto
 <br>
 
-![image](images/nmap.PNG)
+![image](images/nmap.png)
 <br>
 
-## Apache (Puerto 80)
+## Apache (Puerto 8080)
 
-Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web. Al buscar 172.17.0.2 nos encontramos con esto
+Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web, pero en este caso nos lo ponen más difícil usando el puerto 8080. Al buscar 172.17.0.2 no vemos nada, ya qu ele buscador usa el puerto 80 como predeterminado. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:8080`. Al poner eso podremos acceder a la web.
 
-![image](images/inicio.PNG)
+![image](images/inicio.png)
 
 
 Aquí podemos observar tres laboratorios para practicar open-redirect, para el que no sepa lo que es un open-redirect, este es una vulnerabilidad en una web que permite redirigir a los usuarios a una página externa modificando la url.
