@@ -1,10 +1,10 @@
-Máquina: [Redirection](https://bugbountylabs.com/)
+Máquina: [Hidden Redirection ](https://bugbountylabs.com/)
 
 Autor: El Pinguino de Mario & Curiosidades De Hackers
 
 Dificultad: Principiante
 
-![image](images/Redirection.PNG)
+![image](images/HiddenRedirection.png)
 
 ## Despliegue
 
