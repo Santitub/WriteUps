@@ -10,7 +10,7 @@ Dificultad: Principiante
 
 Nos descargamos el archivo .zip que contiene el auto_deploy, lo descomprimimos y ejecutamos el .py como **sudo**
 
-![image](images/despliegue.PNG)
+![image](images/despliegue.png)
 
 
 ## Reconocimiento
@@ -33,7 +33,7 @@ Una vez que tengamos conectividad con la máquina usamos nmap ```nmap -p- --open
 `-Pn` ⮞ ignora si esta activa o no la IP<br> 
 <br>
 
-Al aplicar el escaneo, vemos que el puerto 80 está abierto
+Al aplicar el escaneo, vemos que el puerto 8080 está abierto
 <br>
 
 ![image](images/nmap.PNG)
