@@ -41,23 +41,17 @@ Al aplicar el escaneo, vemos que el puerto 8080 está abierto
 
 ## Apache (Puerto 8080)
 
-Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web, pero en este caso nos lo ponen más difícil usando el puerto 8080. Al buscar 172.17.0.2 no vemos nada, ya qu ele buscador usa el puerto 80 como predeterminado. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:8080`. Al poner eso podremos acceder a la web.
+Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web, pero en este caso nos lo ponen más difícil usando el puerto 8080. Al buscar 172.17.0.2 no vemos nada, ya que el buscador usa el puerto 80 como predeterminado. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:8080`. Al poner eso podremos acceder a la web.
 
 ![image](images/inicio.png)
 
 
-Aquí podemos observar tres laboratorios para practicar open-redirect, para el que no sepa lo que es un open-redirect, este es una vulnerabilidad en una web que permite redirigir a los usuarios a una página externa modificando la url.
+Aquí podemos observar muchos botones (en total hay 50) que si los pulsamos nos llevan todos a `https://elrincondelhacker.es`. También podemos ver un texto que nos dice que encontremos el enlace vulnerable
 
-
-## Laboratorio 1
-
-En este laboratorio podemos observar un botón que si lo presionamos nos redirige a google
-
-![image](images/laboratorio1.PNG)
 
 Si miramos el código fuente de la página nos encontramos con esta parte que maneja la redirección
 
-![image](images/enlace1.PNG)
+![image](images/codigo_fuente.png)
 
 
 Viendo esto, podemos probar a cambiar la url a la que nos redirige el botón a por ejemplo `dockerlabs.es`. Con lo cual nos quedaría así ![image](images/url1.PNG)
