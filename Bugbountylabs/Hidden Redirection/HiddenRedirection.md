@@ -62,5 +62,10 @@ Al utilizarlo vemos este resultado
 
 ![image](images/resultado.png)
 
+Al probar esa url vemos que nos redirige a `dockerlabs.es` (podemos probar cualquier url)
+
+
+![image](images/dockerlabs.png)
+
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
