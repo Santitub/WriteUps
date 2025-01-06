@@ -1,4 +1,4 @@
-Máquina: [Hidden Redirection ](https://bugbountylabs.com/)
+Máquina: [Hidden Redirection](https://bugbountylabs.com/)
 
 Autor: El Pinguino de Mario & Curiosidades De Hackers
 
@@ -54,51 +54,13 @@ Si miramos el código fuente de la página nos encontramos con esta parte en la 
 ![image](images/codigo_fuente.png)
 
 
-Viendo esto, podemos usar este script para enumerar todos los enlaces y guardarlos en un txt
+Viendo esto, podemos usar este [script](https://github.com/Santitub/Bountyscripts/blob/main/lista.py) para enumerar todos los enlaces y guardarlos en un txt
 
+Una vez guardados los enlaces podemos ver cual es válido con este otro [script](https://github.com/Santitub/Bountyscripts/blob/main/links.py)
 
-## Laboratorio 2
+Al utilizarlo vemos este resultado
 
-En este laboratorio también podemos observar un botón que si lo presionamos nos redirige a google
-
-![image](images/laboratorio2.PNG)
-
-Si miramos el código fuente el código de redirección es el mismo, pero si probamos el mismo método vemos que no funcionará. Así que habrá que probar otro método
-
-![image](images/error1.PNG)
-
-Para hacer open-redirection también podemos probar a usar un @, que se usa para separar la url de la página principal y la atacante. Y la url final nos quedaría así
-
-![image](images/url2.PNG)
-
-Al presionar ENTER, me sale esta confirmación (no siempre tiene porque salir). Y la damos a `Yes`
-
-![image](images/confirmación.PNG)
-
-Al hacer esto, podemos ver que funciona y nos redirige a `dockerlabs.es`
-
-![image](images/dockerlabs.PNG)
-
-
-## Laboratorio 3
-
-En este laboratorio la estructura es la misma que los otros dos, un botón que nos redirige a google
-
-![image](images/laboratorio3.PNG)
-
-Si probamos a cambiar la url o usamos el @ nos dará este error
-
-![image](images/error1.PNG)
-
-Para estos casos podemos utilizar oralyzer, una herramienta para detectar vulnerabilidades de open-redirect pasándole una url como input. Es este caso usaremos esta url `http://172.17.0.2/laboratorio3/redirect.php?url=https://www.google.com`
-
-![image](images/oralyzer.PNG)
-
-Al ejecutar el comando vemos que detecta varias url con las que se puede explotar el open-redirect. Pero como todas redirigen a google pues no podemos saber si en realidad funciona, ya que el laboratorio da como válido todos los enlaces que redirijan a google. Así que probaremos esta url `http://172.17.0.2/laboratorio3/redirect.php?url=http%3A%2F%2Fwww.dev.google.com`.
-
-Al utilizar esa url podemos ver que nos redirige a `www.dev.google.com`, aunque este dominio no exista, podemos ver que la web es vulnerable a un open-redirect
-
-![image](images/final.PNG)
+![image](images/resultado.png)
 
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
