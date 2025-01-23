@@ -1,6 +1,6 @@
-Máquina: [Hidden Redirection](https://bugbountylabs.com/)
+Máquina: [Escape](https://bugbountylabs.com/)
 
-Autor: El Pinguino de Mario & Curiosidades De Hackers
+Autor: Zunderrub
 
 Dificultad: Principiante
 
