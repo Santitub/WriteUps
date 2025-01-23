@@ -53,7 +53,7 @@ Para probar payloads podemos entrar en esta [url](https://github.com/payloadbox/
 
 En esa página nos podemos encontrar con una lista llena de payloads para xss
 
-![image](payloads.PNG)
+![image](images/payloads.PNG)
 
 
 Viendo esto, podemos usar este [script](https://github.com/Santitub/Bountyscripts/blob/main/lista.py) para enumerar todos los enlaces y guardarlos en un txt
