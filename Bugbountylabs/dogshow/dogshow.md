@@ -1,10 +1,10 @@
-Máquina: [Escape](https://bugbountylabs.com/)
+Máquina: [DogShow](https://bugbountylabs.com/)
 
-Autor: Zunderrub
+Autor: El Pinguino de Mario & Curiosidades De Hackers
 
-Dificultad: Principiante
+Dificultad: Avanzado
 
-![image](images/escape.PNG)
+![image](images/dogshow.PNG)
 
 ## Despliegue
 
