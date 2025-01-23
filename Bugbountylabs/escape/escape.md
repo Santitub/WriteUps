@@ -56,18 +56,11 @@ En esa página nos podemos encontrar con una lista llena de payloads para xss
 ![image](images/payloads.PNG)
 
 
-Viendo esto, podemos usar este [script](https://github.com/Santitub/Bountyscripts/blob/main/lista.py) para enumerar todos los enlaces y guardarlos en un txt
+Para resolver la máquina, podemos probar por ejemplo el payload `"><svg onload=alert(1)//`, este payload utliza `">` al inicio, ya que esto le indica a la web que se cerró la etiqueta enterior (la del campo de texto) y el resto del comando le indica que estamos añadiendo algo aparte.
 
-Una vez guardados los enlaces podemos ver cual es válido con este otro [script](https://github.com/Santitub/Bountyscripts/blob/main/links.py)
+Si probamos este payload vemos que funciona perfectamente
 
-Al utilizarlo vemos este resultado
-
-![image](images/resultado.png)
-
-Al probar esa url vemos que nos redirige a `dockerlabs.es` (podemos probar cualquier url)
-
-
-![image](images/dockerlabs.png)
+![image](images/final.PNG)
 
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
