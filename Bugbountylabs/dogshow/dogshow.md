@@ -66,13 +66,27 @@ En este laboratorio nos encontramos una web con una foto y don botones, uno regi
 
 ![image](images/reg.PNG)
 
-Vamos a probar a registrarnos en esta web por si más adelante podemos encontrar algo interesante, en este caso yo lo rellené con estos datos
+Vamos a probar a registrarnos en esta web por si más adelante podemos encontrar algo interesante, en este caso yo lo rellené con estos datos: usuario: test, correo: test@test.com y contraseña: 123123
 
 ![image](images/regc.PNG)
 
+Al acabar de registrarnos nos lleva automáticamente al apartado del login
 
 
+![image](images/login.PNG)
 
+Este lo completaremos con los datos que usamos en el registro
+
+
+![image](images/loginc.PNG)
+
+Cuando nos logueemos nos llevará a este panel para introducir datos de un perro para participar en la competición
+
+![image](images/panel.PNG)
+
+En este panel rellenaremos en nombre del perro y breed (raza del perro) con el mismo payload que utilizamos antes: `"><svg onload=alert(1)//` y los otros 2 parámetros con lo que nos pide (en la edad un número y en la url de la imagen pues una url de imagen cualquiera). Así es como me quedó a mí.
+
+![image](images/panelc.PNG)
 
 
 ![image](images/final.PNG)
