@@ -45,11 +45,15 @@ Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puert
 
 ![image](images/inicio.PNG)
 
-En esta web hay un campo para insertar texto , un botón de enviar y un título diciéndonos que es vulnerable a xss. 
+En esta web hay un campo para insertar texto , un botón de enviar y un título diciéndonos que es vulnerable a xss.
 
 Para probar payloads podemos entrar en esta [url](https://github.com/payloadbox/xss-payload-list/blob/master/Intruder/xss-payload-list.txt)
 
 En este caso, probaremos el payload `"><svg onload=alert(1)//`, ya que utliza `">` al inicio, ya que esto le indica a la web que se cerró la etiqueta enterior (la del campo de texto) y el resto del comando le indica que estamos añadiendo algo aparte.
+
+Al probar este payload vemos que funciona perfectamente, pero aún no hemos acabado, ya que vimos antes que el puerto 5000 estaba abierto
+
+![image](images/sol1.PNG)
 
 
 ## Flask (Puerto 5000)
@@ -58,15 +62,12 @@ En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para apli
 
 ![image](images/lab2.PNG)
 
+En este laboratorio nos encontramos una web con una foto y don botones, uno re register y otro de login
 
 
 
-En esa página nos podemos encontrar con una lista llena de payloads para xss
 
 ![image](images/payloads.PNG)
-
-
-Para resolver la máquina, podemos probar por ejemplo el payload `"><svg onload=alert(1)//`, este payload utliza `">` al inicio, ya que esto le indica a la web que se cerró la etiqueta enterior (la del campo de texto) y el resto del comando le indica que estamos añadiendo algo aparte.
 
 Si probamos este payload vemos que funciona perfectamente
 
