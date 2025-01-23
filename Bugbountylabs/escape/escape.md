@@ -46,12 +46,14 @@ En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para apli
 ![image](images/inicio.PNG)
 
 
-Aquí podemos observar muchos botones (en total hay 50) que si los pulsamos nos llevan todos a `https://elrincondelhacker.es`. También podemos ver un texto que nos dice que encontremos el enlace vulnerable
+En la web nos encontramos con un campo para ingresar texto en el que nosp piden que ingresemos un payload para escapar del atributo html (Un atributo HTML es una característica o propiedad adicional que se puede agregar a una etiqueta HTML para proporcionar más información sobre un elemento o modificar su comportamiento).
 
 
-Si miramos el código fuente de la página nos encontramos con esta parte en la que están todas las url
+Para probar payloads podemos entrar en esta [url](https://github.com/payloadbox/xss-payload-list/blob/master/Intruder/xss-payload-list.txt)
 
-![image](images/codigo_fuente.png)
+En esa página nos podemos encontrar con una lista llena de payloads para xss
+
+![image](payloads.PNG)
 
 
 Viendo esto, podemos usar este [script](https://github.com/Santitub/Bountyscripts/blob/main/lista.py) para enumerar todos los enlaces y guardarlos en un txt
