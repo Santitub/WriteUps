@@ -33,20 +33,24 @@ Una vez que tengamos conectividad con la máquina usamos nmap ```nmap -p- --open
 `-Pn` ⮞ ignora si esta activa o no la IP<br> 
 <br>
 
-Al aplicar el escaneo, vemos que el puerto 8080 está abierto
+Al aplicar el escaneo, vemos que los puertos 80 y 5000 está abiertos
 <br>
 
 ![image](images/nmap.PNG)
 <br>
 
+## Apache (Puerto 80)
+
+Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web. Al buscar 172.17.0.2 nos encontramos con esto
+
 ## Flask (Puerto 5000)
 
-En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para aplicaciones flask dentro de python. Al buscar 172.17.0.2 no vemos nada, ya que el buscador usa el puerto 80 como predeterminado. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:5000`. Al poner eso podremos acceder a la web.
+En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para aplicaciones flask dentro de python. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:5000`. Al poner eso podremos acceder a la web.
 
 ![image](images/inicio.PNG)
 
 
-En la web nos encontramos con un campo para ingresar texto en el que nosp piden que ingresemos un payload para escapar del atributo html (Un atributo HTML es una característica o propiedad adicional que se puede agregar a una etiqueta HTML para proporcionar más información sobre un elemento o modificar su comportamiento).
+En la web nos encontramos con un campo para ingresar texto en el que nos piden que ingresemos un payload para escapar del atributo html (Un atributo HTML es una característica o propiedad adicional que se puede agregar a una etiqueta HTML para proporcionar más información sobre un elemento o modificar su comportamiento).
 
 
 Para probar payloads podemos entrar en esta [url](https://github.com/payloadbox/xss-payload-list/blob/master/Intruder/xss-payload-list.txt)
