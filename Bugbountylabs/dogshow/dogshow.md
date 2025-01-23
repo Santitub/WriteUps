@@ -88,6 +88,8 @@ En este panel rellenaremos en nombre del perro y breed (raza del perro) con el m
 
 ![image](images/panelc.PNG)
 
+Con todos los datos listos podemos darle a "Add dog", y al hacer esto vemos que el payload que usamos funciona y conseguimos vulnerar la web otra vez.
+
 
 ![image](images/final.PNG)
 
