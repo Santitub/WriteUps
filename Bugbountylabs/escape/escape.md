@@ -4,13 +4,13 @@ Autor: El Pinguino de Mario & Curiosidades De Hackers
 
 Dificultad: Principiante
 
-![image](images/HiddenRedirection.png)
+![image](images/escape.PNG)
 
 ## Despliegue
 
 Nos descargamos el archivo .zip que contiene el auto_deploy, lo descomprimimos y ejecutamos el .py como **sudo**
 
-![image](images/despliegue.png)
+![image](images/despliegue.PNG)
 
 
 ## Reconocimiento
@@ -36,14 +36,14 @@ Una vez que tengamos conectividad con la máquina usamos nmap ```nmap -p- --open
 Al aplicar el escaneo, vemos que el puerto 8080 está abierto
 <br>
 
-![image](images/nmap.png)
+![image](images/nmap.PNG)
 <br>
 
-## Apache (Puerto 8080)
+## Flask (Puerto 5000)
 
-Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web, pero en este caso nos lo ponen más difícil usando el puerto 8080. Al buscar 172.17.0.2 no vemos nada, ya que el buscador usa el puerto 80 como predeterminado. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:8080`. Al poner eso podremos acceder a la web.
+En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para aplicaciones flask dentro de python. Al buscar 172.17.0.2 no vemos nada, ya que el buscador usa el puerto 80 como predeterminado. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:5000`. Al poner eso podremos acceder a la web.
 
-![image](images/inicio.png)
+![image](images/inicio.PNG)
 
 
 Aquí podemos observar muchos botones (en total hay 50) que si los pulsamos nos llevan todos a `https://elrincondelhacker.es`. También podemos ver un texto que nos dice que encontremos el enlace vulnerable
