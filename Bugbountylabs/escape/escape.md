@@ -46,7 +46,7 @@ En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para apli
 ![image](images/inicio.PNG)
 
 
-En la web nos encontramos con un campo para ingresar texto en el que nosp piden que ingresemos un payload para escapar del atributo html (Un atributo HTML es una característica o propiedad adicional que se puede agregar a una etiqueta HTML para proporcionar más información sobre un elemento o modificar su comportamiento).
+En la web nos encontramos con un campo para ingresar texto en el que nos piden que ingresemos un payload para escapar del atributo html (Un atributo HTML es una característica o propiedad adicional que se puede agregar a una etiqueta HTML para proporcionar más información sobre un elemento o modificar su comportamiento).
 
 
 Para probar payloads podemos entrar en esta [url](https://github.com/payloadbox/xss-payload-list/blob/master/Intruder/xss-payload-list.txt)
