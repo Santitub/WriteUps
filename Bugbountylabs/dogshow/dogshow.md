@@ -62,7 +62,13 @@ En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para apli
 
 ![image](images/lab2.PNG)
 
-En este laboratorio nos encontramos una web con una foto y don botones, uno reregister y otro de login
+En este laboratorio nos encontramos una web con una foto y don botones, uno register y otro de login. Vamos a darle al de register
+
+![image](images/reg.PNG)
+
+Vamos a probar a registrarnos en esta web por si más adelante podemos encontrar algo interesante, en este caso yo lo rellené con estos datos
+
+![image](images/regc.PNG)
 
 
 
