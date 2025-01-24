@@ -36,31 +36,24 @@ Una vez que tengamos conectividad con la máquina usamos nmap ```nmap -p- --open
 Al aplicar el escaneo, vemos que el puerto 5000 está abierto
 <br>
 
-![image](images/nmap.PNG)
+![image](images/nmap.png)
 <br>
 
 ## Flask (Puerto 5000)
 
 En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para aplicaciones flask dentro de python. Al buscar 172.17.0.2 no vemos nada, ya que el buscador usa el puerto 80 como predeterminado. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:5000`. Al poner eso podremos acceder a la web.
 
-![image](images/inicio.PNG)
+![image](images/inicio.png)
 
 
-En la web nos encontramos con un campo para ingresar texto en el que nos piden que ingresemos un payload para escapar del atributo html (Un atributo HTML es una característica o propiedad adicional que se puede agregar a una etiqueta HTML para proporcionar más información sobre un elemento o modificar su comportamiento).
+En la web nos encontramos con un campo para ingresar texto en el que nos piden que ingresemos un texto y un botón de enviar. Podemos probar payloads de esta [url](https://github.com/payloadbox/xss-payload-list/blob/master/Intruder/xss-payload-list.txt)
 
 
-Para probar payloads podemos entrar en esta [url](https://github.com/payloadbox/xss-payload-list/blob/master/Intruder/xss-payload-list.txt)
+Por ejemplo podemos probar el payload `"><svg onload=alert(1)//`, este payload utliza `">` al inicio, ya que esto le indica a la web que se cerró la etiqueta enterior (la del campo de texto) y el resto del comando le indica que estamos añadiendo algo aparte.
 
-En esa página nos podemos encontrar con una lista llena de payloads para xss
+Si probamos este payload vemos que no funciona, pero vemos que ha aparecido algo en la web.
 
-![image](images/payloads.PNG)
-
-
-Para resolver la máquina, podemos probar por ejemplo el payload `"><svg onload=alert(1)//`, este payload utliza `">` al inicio, ya que esto le indica a la web que se cerró la etiqueta enterior (la del campo de texto) y el resto del comando le indica que estamos añadiendo algo aparte.
-
-Si probamos este payload vemos que funciona perfectamente
-
-![image](images/final.PNG)
+![image](images/pista1.png)
 
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
