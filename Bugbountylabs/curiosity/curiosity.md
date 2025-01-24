@@ -55,5 +55,10 @@ Si probamos este payload vemos que no funciona, pero vemos que ha aparecido algo
 
 ![image](images/pista1.png)
 
+Ahora podemos observar lo que escribimos pero además aparece un **2** y una imagen de una etiqueta. Esto se puede referir a que en vez cerrar una etiqueta haya que cerrar 2, así que probamos con este comando `">"><svg onload=alert(1)//`.
+
+Si probamos con esto vemos como sale un mensaje de que logramos resolver la máquina.
+
+![image](images/final.png)
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
