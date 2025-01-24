@@ -1,6 +1,6 @@
-Máquina: [Escape](https://bugbountylabs.com/)
+Máquina: [Curiosity](https://bugbountylabs.com/)
 
-Autor: Zunderrub
+Autor: Santitub
 
 Dificultad: Principiante
 
@@ -10,7 +10,7 @@ Dificultad: Principiante
 
 Nos descargamos el archivo .zip que contiene el auto_deploy, lo descomprimimos y ejecutamos el .py como **sudo**
 
-![image](images/despliegue.PNG)
+![image](images/despliegue.png)
 
 
 ## Reconocimiento
