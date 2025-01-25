@@ -81,6 +81,8 @@ Al ejecutar esto vemos que nos aparece un archivo llamado **web.html**, si lo ab
 
 ![image](images/sol1.PNG)
 
+
+
 # Laboratorio 2
 
 Para acceder a este laboratorio ponemos en el navegador `http://172.17.0.2:8080`, y al buscarlo nos encontramos con que nos da error 403
@@ -106,5 +108,12 @@ Ya que **curl** no funciona, podemos probar a utilizar este [script](https://git
 Al ejecutar el script vemos que nos aparece un archivo llamado **web.html**, si lo abrimos con nuestro navegador nos encontramos con esto
 
 ![image](images/sol2.PNG)
+
+
+# Laboratorio 2
+
+Para acceder a este laboratorio ponemos en el navegador `http://172.17.0.2:9090`, y al buscarlo nos encontramos con que nos da error 403
+
+![image](images/inicio2.PNG)
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
