@@ -1,10 +1,10 @@
-Máquina: [DogShow](https://bugbountylabs.com/)
+Máquina: [Corsy](https://bugbountylabs.com/)
 
 Autor: El Pinguino de Mario & Curiosidades De Hackers
 
 Dificultad: Avanzado
 
-![image](images/dogshow.PNG)
+![image](images/corsy.PNG)
 
 ## Despliegue
 
@@ -41,13 +41,27 @@ Al aplicar el escaneo, vemos que los puertos 80 y 5000 está abiertos
 
 ## Apache (Puerto 80)
 
-Al ser una máquina enfocada al bug bounty, lo normal es solo encontrar el puerto 80 que corresponde al servidor web. Al buscar 172.17.0.2 nos encontramos con esto
+En el contexto de una máquina orientada al bug bounty, lo más común es encontrar el puerto 80 abierto, ya que este es el puerto estándar para los servidores web.
 
-![image](images/inicio.PNG)
+## Servidor web (Puerto 8080)
 
-En esta web hay un campo para insertar texto , un botón de enviar y un título diciéndonos que es vulnerable a xss.
+El puerto 8080 es una alternativa al puerto 80. Se utiliza en situaciones donde el puerto 80 está ocupado o no se desea utilizar por alguna razón. A menudo, es usado por servidores web adicionales o aplicaciones que requieren un puerto distinto.
 
-Para probar payloads podemos entrar en esta [url](https://github.com/payloadbox/xss-payload-list/blob/master/Intruder/xss-payload-list.txt)
+## Aplicaciones de administración (Puerto 9090)
+
+Este puerto es comúnmente utilizado por aplicaciones de administración, especialmente para interfaces web que permiten gestionar servicios o recursos de un servidor. Se utiliza con frecuencia en herramientas de monitoreo de redes, paneles de control o para la administración de servidores y aplicaciones específicas.
+
+Cada puerto corresponde a un laboratorio conde tenemos que explotar la vulnerabilidad CORS (Cross-Origin Resource Sharing), esta surge cuando la configuración del servidor no restringe adecuadamente los orígenes permitidos, lo que puede llevar a filtraciones de datos sensibles y a la explotación de APIs. Es importante configurar CORS de manera cuidadosa y restringir el acceso solo a orígenes confiables.
+
+# Laboratorio 1
+
+Para acceder a este laboratorio ponemos en el navegador `http://172.17.0.2`, y al buscarlo nos encontramos con esto
+
+![image](images/inicio1.PNG)
+
+Como vemos nos redirige a `corsy.lab` pero nos da un error de que no se puede conectar al servidor. Para arreglarlo podemos entrar al archivo /etc/host con `sudo nano /etc/hosts` y al final del archivo ponemos esto
+
+![image](images/pista1.PNG)
 
 En este caso, probaremos el payload `"><svg onload=alert(1)//`, ya que utliza `">` al inicio, ya que esto le indica a la web que se cerró la etiqueta enterior (la del campo de texto) y el resto del comando le indica que estamos añadiendo algo aparte.
 
