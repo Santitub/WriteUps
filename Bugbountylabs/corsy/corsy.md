@@ -33,7 +33,7 @@ Una vez que tengamos conectividad con la máquina usamos nmap ```nmap -p- --open
 `-Pn` ⮞ ignora si esta activa o no la IP<br> 
 <br>
 
-Al aplicar el escaneo, vemos que los puertos 80 y 5000 está abiertos
+Al aplicar el escaneo, vemos que los puertos 80, 8080 y 9090 está abiertos
 <br>
 
 ![image](images/nmap.PNG)
