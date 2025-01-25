@@ -77,38 +77,7 @@ Esto nos indica que se nos está bloqueando la conexión y que no podemos accede
 
 `-o web.htm`l ⮞ Especificar nombre de archivo de salida. La opción -o permite definir el nombre con el que deseas guardar el archivo descargado. En este caso, el archivo se guardará como web.html en lugar de usar el nombre que el servidor podría haber sugerido.
 
-![image](images/lab2.PNG)
 
-En este laboratorio nos encontramos una web con una foto y don botones, uno register y otro de login. Vamos a darle al de register
-
-![image](images/reg.PNG)
-
-Vamos a probar a registrarnos en esta web por si más adelante podemos encontrar algo interesante, en este caso yo lo rellené con estos datos: usuario: test, correo: test@test.com y contraseña: 123123
-
-![image](images/regc.PNG)
-
-Al acabar de registrarnos nos lleva automáticamente al apartado del login
-
-
-![image](images/login.PNG)
-
-Este lo completaremos con los datos que usamos en el registro
-
-
-![image](images/loginc.PNG)
-
-Cuando nos logueemos nos llevará a este panel para introducir datos de un perro para participar en la competición
-
-![image](images/panel.PNG)
-
-En este panel rellenaremos en nombre del perro y breed (raza del perro) con el mismo payload que utilizamos antes: `"><svg onload=alert(1)//` y los otros 2 parámetros con lo que nos pide (en la edad un número y en la url de la imagen pues una url de imagen cualquiera). Así es como me quedó a mí.
-
-![image](images/panelc.PNG)
-
-Con todos los datos listos podemos darle a "Add dog", y al hacer esto vemos que el payload que usamos funciona y conseguimos vulnerar la web otra vez.
-
-
-![image](images/final.PNG)
 
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
