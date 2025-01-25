@@ -110,10 +110,19 @@ Al ejecutar el script vemos que nos aparece un archivo llamado **web.html**, si 
 ![image](images/sol2.PNG)
 
 
-# Laboratorio 2
+# Laboratorio 3
 
 Para acceder a este laboratorio ponemos en el navegador `http://172.17.0.2:9090`, y al buscarlo nos encontramos con que nos da error 403
 
-![image](images/inicio2.PNG)
+![image](images/inicio3.PNG)
+
+Para este laboratorio podemos intentar usar el comando `curl http://172.17.0.2:9090 -H "Origin: http://corsy.lab"` o el [script](https://github.com/Santitub/Bountyscripts/blob/main/cors.py), pero ninguna de las 2 va a funcionar, así que le haremos otro escaneo con nmap pero a ese puerto específicamente, esto lo haremos con `sudo nmap -p 9090 --script=ssl-cert,ssl-enum-ciphers -vvv -Pn 172.17.0.2`, esto detectará que está corriendo por ese puerto
+
+![image](images/nmap2.PNG)
+
+Podemos ver que el servicio que corre no es http, si no zeus-admin, un servidor web de alto rendimiento usado en sistema Unix. Así que podemos intentar probar el comando de **curl** pero con `https` en vez de `http`.
+`curl http://172.17.0.2:9090 -H "Origin: https://corsy.lab" -o web.html` y en este caso vemos que funciona. Si abrimos el archivo **web.html** nos lleva a esta web
+
+![image](images/sol3.PNG)
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
