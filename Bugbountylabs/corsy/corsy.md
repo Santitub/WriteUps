@@ -101,7 +101,7 @@ Podemos intentar usar el comando `curl http://172.17.0.2:8080 -H "Origin: http:/
 </body></html>
 ```
 
-Esto nos indica que se nos está bloqueando la conexión y que no podemos acceder, pero podemos intentar bypassear esto con **curl** para ahcerle creer a la web que somos corsy.lab, para esto ejecutaremos `curl http://corsy.lab -H "Origin: http://corsy.lab" -o web.html`
+Ya que **curl** no funciona, podemos probar a utilizar este [script](https://github.com/Santitub/Bountyscripts/blob/main/cors.py)
 
 `curl` ⮞ Comando principal. Es la herramienta de línea de comandos utilizada para realizar solicitudes HTTP y recibir respuestas de servidores web.
 
