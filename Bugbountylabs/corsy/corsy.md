@@ -116,7 +116,7 @@ Para acceder a este laboratorio ponemos en el navegador `http://172.17.0.2:9090`
 
 ![image](images/inicio3.PNG)
 
-Para este laboratorio podemos intentar usar el comando `curl http://172.17.0.2:9090 -H "Origin: http://corsy.lab"` o el [script](https://github.com/Santitub/Bountyscripts/blob/main/cors.py), pero ninguna de las 2 va a funcionar, así que le haremos otro escaneo con nmap pero a ese puerto específicamente, esto lo haremos con `sudo nmap -p 9090 --script=ssl-cert,ssl-enum-ciphers -vvv -Pn 172.17.0.2`, esto detectará que está corriendo por ese puerto
+Para este laboratorio podemos intentar usar el comando `curl http://172.17.0.2:9090 -H "Origin: http://corsy.lab"` o el [script](https://github.com/Santitub/Bountyscripts/blob/main/cors.py), pero ninguna de las dos va a funcionar, así que le haremos otro escaneo con nmap pero a ese puerto específicamente, esto lo haremos con `sudo nmap -p 9090 --script=ssl-cert,ssl-enum-ciphers -vvv -Pn 172.17.0.2`, esto detectará que está corriendo por ese puerto
 
 ![image](images/nmap2.PNG)
 
