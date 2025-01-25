@@ -67,7 +67,15 @@ Al hacer eso cuardamos el archivo con `Ctrl+X` y `Ctrl+O` y volvemos a entrar a 
 
 ![image](images/403.1.PNG)
 
-Esto nos indica que se nos está bloqueando la conexión y que no podemos acceder, pero podemos intentar bypassear esto con **curl** para ahcerle creer a la web que somos corsy.lab, para esto ejecutaremos `curl http://corsy.lab -H "Origin: http://corsy.lab"`
+Esto nos indica que se nos está bloqueando la conexión y que no podemos acceder, pero podemos intentar bypassear esto con **curl** para ahcerle creer a la web que somos corsy.lab, para esto ejecutaremos `curl http://corsy.lab -H "Origin: http://corsy.lab" -o web.html`
+
+`curl` ⮞ Comando principal. Es la herramienta de línea de comandos utilizada para realizar solicitudes HTTP y recibir respuestas de servidores web.
+
+`http://corsy.lab` ⮞ URL de destino. Es la dirección a la que curl hace la solicitud. En este caso, es http://corsy.lab.
+
+`-H "Origin: http://corsy.lab"` ⮞ Encabezado HTTP personalizado. La opción -H agrega un encabezado a la solicitud HTTP. Aquí, el encabezado Origin: http://corsy.lab indica al servidor que la solicitud proviene de esta URL, lo cual es útil en situaciones de CORS (Cross-Origin Resource Sharing).
+
+`-o web.htm`l ⮞ Especificar nombre de archivo de salida. La opción -o permite definir el nombre con el que deseas guardar el archivo descargado. En este caso, el archivo se guardará como web.html en lugar de usar el nombre que el servidor podría haber sugerido.
 
 ![image](images/lab2.PNG)
 
