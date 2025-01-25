@@ -89,7 +89,8 @@ Para acceder a este laboratorio ponemos en el navegador `http://172.17.0.2:8080`
 
 Podemos intentar usar el comando `curl http://172.17.0.2:8080 -H "Origin: http://corsy.lab"`, pero en este caso no va a funcionar y obtenemos este resultado:
 
-`<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+```html
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
 <title>403 Forbidden</title>
 </head><body>
@@ -98,7 +99,7 @@ Podemos intentar usar el comando `curl http://172.17.0.2:8080 -H "Origin: http:/
 <hr>
 <address>Apache/2.4.62 (Debian) Server at 172.17.0.2 Port 8080</address>
 </body></html>
-`
+```
 
 Esto nos indica que se nos está bloqueando la conexión y que no podemos acceder, pero podemos intentar bypassear esto con **curl** para ahcerle creer a la web que somos corsy.lab, para esto ejecutaremos `curl http://corsy.lab -H "Origin: http://corsy.lab" -o web.html`
 
