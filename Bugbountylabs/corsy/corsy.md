@@ -83,17 +83,22 @@ Al ejecutar esto vemos que nos aparece un archivo llamado **web.html**, si lo ab
 
 # Laboratorio 2
 
-Para acceder a este laboratorio ponemos en el navegador `http://172.17.0.2`, y al buscarlo nos encontramos con esto
+Para acceder a este laboratorio ponemos en el navegador `http://172.17.0.2:8080`, y al buscarlo nos encontramos con que nos da error 403
 
-![image](images/inicio1.PNG)
+![image](images/inicio2.PNG)
 
-Como vemos nos redirige a `corsy.lab` pero nos da un error de que no se puede conectar al servidor. Para arreglarlo podemos entrar al archivo /etc/host con `sudo nano /etc/hosts` y al final del archivo ponemos esto
+Podemos intentar usar el comando `curl http://172.17.0.2:8080 -H "Origin: http://corsy.lab"`, pero en este caso no va a funcionar y obtenemos este resultado:
 
-![image](images/pista1.PNG)
-
-Al hacer eso cuardamos el archivo con `Ctrl+X` y `Ctrl+O` y volvemos a entrar a `http://172.17.0.2`. Esta vez nos aparece algo diferente
-
-![image](images/403.1.PNG)
+`<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.62 (Debian) Server at 172.17.0.2 Port 8080</address>
+</body></html>
+`
 
 Esto nos indica que se nos está bloqueando la conexión y que no podemos acceder, pero podemos intentar bypassear esto con **curl** para ahcerle creer a la web que somos corsy.lab, para esto ejecutaremos `curl http://corsy.lab -H "Origin: http://corsy.lab" -o web.html`
 
