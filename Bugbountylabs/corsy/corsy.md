@@ -103,16 +103,8 @@ Podemos intentar usar el comando `curl http://172.17.0.2:8080 -H "Origin: http:/
 
 Ya que **curl** no funciona, podemos probar a utilizar este [script](https://github.com/Santitub/Bountyscripts/blob/main/cors.py)
 
-`curl` ⮞ Comando principal. Es la herramienta de línea de comandos utilizada para realizar solicitudes HTTP y recibir respuestas de servidores web.
+Al ejecutar el script vemos que nos aparece un archivo llamado **web.html**, si lo abrimos con nuestro navegador nos encontramos con esto
 
-`http://corsy.lab` ⮞ URL de destino. Es la dirección a la que curl hace la solicitud. En este caso, es http://corsy.lab.
-
-`-H "Origin: http://corsy.lab"` ⮞ Encabezado HTTP personalizado. La opción -H agrega un encabezado a la solicitud HTTP. Aquí, el encabezado Origin: http://corsy.lab indica al servidor que la solicitud proviene de esta URL, lo cual es útil en situaciones de CORS (Cross-Origin Resource Sharing).
-
-`-o web.htm`l ⮞ Especificar nombre de archivo de salida. La opción -o permite definir el nombre con el que deseas guardar el archivo descargado. En este caso, el archivo se guardará como web.html en lugar de usar el nombre que el servidor podría haber sugerido.
-
-Al ejecutar esto vemos que nos aparece un archivo llamado **web.html**, si lo abrimos con nuestro navegador nos encontramos con esto
-
-![image](images/sol1.PNG)
+![image](images/sol2.PNG)
 
 ## Y CON ESTO YA LO RESOLVERÍAMOS 😉
