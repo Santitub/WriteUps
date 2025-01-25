@@ -63,16 +63,11 @@ Como vemos nos redirige a `corsy.lab` pero nos da un error de que no se puede co
 
 ![image](images/pista1.PNG)
 
-En este caso, probaremos el payload `"><svg onload=alert(1)//`, ya que utliza `">` al inicio, ya que esto le indica a la web que se cerró la etiqueta enterior (la del campo de texto) y el resto del comando le indica que estamos añadiendo algo aparte.
+Al hacer eso cuardamos el archivo con `Ctrl+X` y `Ctrl+O` y volvemos a entrar a `http://172.17.0.2`. Esta vez nos aparece algo diferente
 
-Al probar este payload vemos que funciona perfectamente, pero aún no hemos acabado, ya que vimos antes que el puerto 5000 estaba abierto
+![image](images/403.1.PNG)
 
-![image](images/sol1.PNG)
-
-
-## Flask (Puerto 5000)
-
-En esta máquina podemos encontrar el puerto 5000 abierto, este se usa para aplicaciones flask dentro de python. Para poder acceder a la web necesitamos usar esta url `http://172.17.0.2:5000`. Al poner eso podremos acceder a la web.
+Esto nos indica que se nos está bloqueando la conexión y que no podemos acceder, pero podemos intentar bypassear esto con **curl** para ahcerle creer a la web que somos corsy.lab, para esto ejecutaremos `curl http://corsy.lab -H "Origin: http://corsy.lab"`
 
 ![image](images/lab2.PNG)
 
